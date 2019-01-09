@@ -1,0 +1,142 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ---------------------------------------------------------------------------*/
+
+/* GLOBAL STYLES */
+html {
+  background-color: white;
+}
+body {
+  margin: auto;
+  min-height: 100vh;
+  width: 80%;
+  background-color: rgb(102, 153, 153);
+}
+
+/* HEADER & NAV STYLES */
+.main-heading {
+	background-color: rgb(179, 204, 204);
+
+}
+.main-heading h1 {
+  padding: 20px;
+  padding-bottom: 20px;
+  color: rgb(102, 153, 153);
+  font-size: 7vh;
+  font-weight: bolder;
+  text-align: center;
+  text-shadow: 2px 2px 0 black;
+}
+.header-nav {
+	text-align: center;
+	padding-bottom: 1em;
+}
+.header-nav > li {
+	display: inline-block;
+	margin-left: 1em;
+}
+.header-nav > li ~ li {
+	border-left: 1px solid rgb(102, 153, 153, 0.7);
+	padding-left: 1em;
+}
+.header-nav a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.sub-heading {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: rgb(102, 153, 153);
+  font-size: 4vh;
+  text-align: center;
+  text-shadow: 2px 2px 0 black;
+}
+.sub-heading span {
+	font-size: 2vh;
+}
+/* grid wrapper */
+.project-catagories {
+  /* background-color: black; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 8vw;
+  grid-row-gap: 8vh;
+  margin: 0 60px;
+}
+
+.content-container {
+	/* display: flex; */
+}
+
+.grid-boxes {
+  background-color: rgb(179, 204, 204);
+	/* border: solid; */
+	border-radius: 40px;
+	cursor: pointer;
+	height: auto;
+	line-height: 1.5;
+  padding: 4vh;
+	position: relative;
+  text-align: center;
+	width: auto
+}
+
+.grid-boxes:hover {
+	background-color: rgb(117, 163, 163);
+	opacity: 1;
+	transition: 1.5s ease;
+	/* backface-visibility: hidden; */
+}
+.project-headings {
+  text-align: center;
+  font-style: normal;
+  color: inherit;
+}

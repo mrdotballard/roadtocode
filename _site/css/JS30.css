@@ -1,0 +1,55 @@
+
+/* ---------------------------------------------------------------------------*/
+.JS30-wrapper {
+  display: flex;
+}
+.project {
+  background-color: rgb(179, 204, 204);
+	/* border: solid; */
+	border-radius: 40px;
+	cursor: pointer;
+	height: auto;
+	line-height: 1.5;
+  padding: 1em 1.5em;
+	position: relative;
+  /* text-align: left; */
+  width: 70%;
+  margin: 2vh auto;
+  /* margin-top: 2vh; */
+}
+.project h3{
+  text-align: center;
+  font-size: 1.3em;
+  font-weight: 600;
+  padding-bottom: 0.5em;
+}
+
+.project p {
+  text-align: left;
+}
+
+.grid-boxes:hover {
+	background-color: rgb(117, 163, 163);
+	opacity: 1;
+	transition: 1.5s ease;
+	/* backface-visibility: hidden; */
+}
+.project-headings {
+  text-align: center;
+  font-style: normal;
+  color: inherit;
+}
+
+.project-titles-side {
+  background-color: rgb(179, 204, 204);
+	border-radius: 40px;
+	/* cursor: pointer; */
+	height: auto;
+	line-height: 1.5;
+  padding: 1em 1.5em;
+	position: relative;
+  /* text-align: left; */
+  width: 12%;
+  margin: 2vh 0 2vh 6vh;
+  /* margin-top: 2vh; */
+}
