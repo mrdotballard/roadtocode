@@ -57,9 +57,20 @@ body {
   margin: auto;
   min-height: 100vh;
   width: 80%;
-  background-color: rgb(102, 153, 153);
+  background-color: white; /*rgb(102, 153, 153);*/
+	/* background-image: url("/images/old-keyboard.png"); */
+	/* background-size: cover; */
+	/* background-position: center 120px; */
 }
-
+.home-page {
+	/* content: none; */
+	/* min-width: 100%;
+	min-height: 100%; */
+	/* background-image: url("/images/old-keyboard.png");
+	background-size: cover%; */
+	/* background-repeat: no-repeat;
+	background-position: center; */
+}
 /* HEADER & NAV STYLES */
 .main-heading {
 	background-color: rgb(179, 204, 204);
@@ -68,7 +79,7 @@ body {
 .main-heading h1 {
   padding: 20px;
   padding-bottom: 20px;
-  color: rgb(102, 153, 153);
+  color: #626262; /*rgb(102, 153, 153);*/
   font-size: 7vh;
   font-weight: bolder;
   text-align: center;
@@ -107,8 +118,8 @@ body {
   /* background-color: black; */
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-column-gap: 8vw;
-  grid-row-gap: 8vh;
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
   margin: 0 60px;
 }
 
@@ -117,16 +128,17 @@ body {
 }
 
 .grid-boxes {
-  background-color: rgb(179, 204, 204);
+  background-color: #2C82C9; /*rgb(179, 204, 204);/*
 	/* border: solid; */
-	border-radius: 40px;
+	border-radius: 10px;
 	cursor: pointer;
 	height: auto;
 	line-height: 1.5;
   padding: 4vh;
 	position: relative;
   text-align: center;
-	width: auto
+	width: auto;
+	color: white;
 }
 
 .grid-boxes:hover {

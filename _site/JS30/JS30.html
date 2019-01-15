@@ -5,6 +5,7 @@
     <title>Code Projects</title>
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/JS30.css">
+
   </head>
 
   <div class="main-heading">
@@ -37,7 +38,9 @@
 
   <body>
     <div class="content-container">
-        <div class="sub-heading intro-box">
+      <header style="background-image: url('/images/old-keyboard.png');"></header>
+<div class="page-background">
+  <div class="sub-heading intro-box">
       <h1>JavaScript30<br> <span>by Wes Bos</span> </h1>
       <p>blurb</p>
   </div>
@@ -46,16 +49,16 @@
 
     <div class="project-titles-side">
       <ul>
-        <li>Drum Kit</li>
-        <li>Clock</li>
-        <li>Another...</li>
+        <li><a href="#project_01">Drum Kit</a></li>
+        <li><a href="#project_02"></a>Clock</li>
+        <li><a href="#project_03"></a>CSS Variables</li>
       </ul>
     </div>
 
     <div class="project-list">
 
-      <div class="project" onclick="window.open('./01DrumKit/index-START.html', '_blank')">
-        <h3>Keyboard Drum Kit</h3>
+      <div class="project 01" onclick="window.open('./01DrumKit/index-START.html', '_blank')">
+        <a id="project_01"><h3>Keyboard Drum Kit</h3></a>
         <p><span style="font-weight: bold;">HTML/CSS</span><br>
           Data attributes, audio files, transitions.<br>
           <br><span style="font-weight: bold;">JavaScript</span><br>
@@ -63,7 +66,7 @@
         </p>
       </div>
 
-      <div class="project" onclick="window.open('./02Clock/index-START.html', '_blank')">
+      <div class="project 02" onclick="window.open('./02Clock/index-START.html', '_blank')">
         <h3>Live Clock Face</h3>
         <p><span style="font-weight: bold;">HTML/CSS</span><br>
           Transform-origin to change axis of transformation, transform: rotate(--deg).<br>
@@ -74,26 +77,21 @@
         </p>
       </div>
 
-      <div class="project" onclick="window.open('./02Clock/index-START.html', '_blank')">
-        <h3>Live Clock Face</h3>
+      <div class="project 03" onclick="window.open('./03CSSVarialbes/index-START.html', '_blank')">
+        <h3>CSS Variables</h3>
         <p><span style="font-weight: bold;">HTML/CSS</span><br>
-          Transform-origin to change axis of transformation, transform: rotate(--deg).<br>
-          Transition-timing-function, browser developer tools allow cool cubic-bezier functions.
+          Declaring and using CSS variables.
           <br><br><span style="font-weight: bold;">JavaScript</span><br>
-          Using setInterval(function(), time_ms) to update clock hands every second, getting
-          live time from Date()#getSeconds, Minutes, Hours.
+          Using CSS variables and DOM selects to change styles.
         </p>
       </div>
 
     </div>
   </div>
-    <h1>HEADER</h1>
-
-    <script type="text/javascript">
-
-    </script>
+</div>
 
     </div>
 
+    <script src="/assets/script.js></script>
   </body>
 </html>

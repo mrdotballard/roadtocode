@@ -1,0 +1,46 @@
+`const` is a signal that the identifier won’t be reassigned.
+
+`let`, is a signal that the variable may be reassigned, such as a counter in a loop, or a value swap in an algorithm. It also signals that the variable will be used only in the block it’s defined in, which is not always the entire containing function.
+
+`var` is now the weakest signal available when you define a variable in JavaScript. The variable may or may not be reassigned, and the variable may or may not be used for an entire function, or just for the purpose of a block or loop.
+
+----------------------
+
+scan method
+Now for some yummy Ruby goodness. Recall from Section 4.3 that strings support a scan method that lets us select regex-matching characters right from a string:
+
+>> "Madam, I'm Adam.".scan(/[a-z]/i)
+=> ["M", "a", "d", "a", "m", "I", "m", "A", "d", "a", "m"]
+>> "Madam, I'm Adam.".scan(/[a-z]/i).join
+=> "MadamImAdam"
+
+----------------------
+
+creating gem and testing with 'minitest' gem
+ensure bundle is installed
+  $ bundle gem <username>_palindrome
+
+  After creating the gem skeleton, cd into the directory and put the project under version control with Git:
+
+  $ cd <username>_palindrome
+  $ git init
+  $ git add -A
+  $ git commit -m "Initialize repository"
+
+fill in gemspec details, i.e. summary, description, homepage.
+to support TTD add minitest-reportes to Gemfile. Also update "test helper" file to include reporters.
+require "minitest/reporters"
+Minitest::Reporters.use!
+
+install necessary gems
+$bundle install
+
+----------------------
+
+publishing gem
+Next, it’s a good idea to install the gem using bundle exec rake install and then test it locally using irb:
+
+$ bundle exec rake release
+
+then it can installed
+$ gem install 'gem_name' -v 'version_num'
