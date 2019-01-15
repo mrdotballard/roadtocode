@@ -50,6 +50,10 @@ table {
 /* ---------------------------------------------------------------------------*/
 
 /* GLOBAL STYLES */
+:root {
+	--text-font: 'Lora', serif;
+	--header-font: 'Fira Sans', sans-serif;
+}
 html {
   background-color: white;
 }
@@ -73,32 +77,40 @@ body {
 }
 /* HEADER & NAV STYLES */
 .main-heading {
-	background-color: rgb(179, 204, 204);
-
+	background-color:  #2C82C9;
+	border-radius: 10px;
 }
 .main-heading h1 {
   padding: 20px;
   padding-bottom: 20px;
-  color: #626262; /*rgb(102, 153, 153);*/
-  font-size: 7vh;
+	color: white; /*rgb(102, 153, 153);*/
+	font-family: var(--header-font);
+  font-size: 8vh;
   font-weight: bolder;
   text-align: center;
-  text-shadow: 2px 2px 0 black;
+  /* text-shadow: 2px 2px 0 black; */
 }
 .header-nav {
 	text-align: center;
 	padding-bottom: 1em;
 }
 .header-nav > li {
+	background-color: #00e64d;
+	font-family: var(--text-font);
+	font-size: 1.2em;
+	/* padding: 0.7em; */
+	border-radius: 10px;
 	display: inline-block;
 	margin-left: 1em;
 }
 .header-nav > li ~ li {
-	border-left: 1px solid rgb(102, 153, 153, 0.7);
-	padding-left: 1em;
+	/* border-left: 1px solid rgb(102, 153, 153, 0.7); */
+	/* padding-left: 1em; */
 }
 .header-nav a {
 	color: inherit;
+	display: inline-block;
+	padding: 0.7em;
 	text-decoration: none;
 }
 
@@ -106,9 +118,10 @@ body {
   padding-top: 50px;
   padding-bottom: 50px;
   color: rgb(102, 153, 153);
-  font-size: 4vh;
+	font-size: 6vh;
+	font-weight: bold;
+	font-family: 'Courgette', cursive;
   text-align: center;
-  text-shadow: 2px 2px 0 black;
 }
 .sub-heading span {
 	font-size: 2vh;
@@ -132,6 +145,8 @@ body {
 	/* border: solid; */
 	border-radius: 10px;
 	cursor: pointer;
+	font-family: var(--text-font);
+	font-size: 1.2em;
 	height: auto;
 	line-height: 1.5;
   padding: 4vh;
@@ -142,13 +157,12 @@ body {
 }
 
 .grid-boxes:hover {
-	background-color: rgb(117, 163, 163);
+	background-color: #00e64d;
 	opacity: 1;
-	transition: 1.5s ease;
-	/* backface-visibility: hidden; */
-}
-.project-headings {
-  text-align: center;
-  font-style: normal;
-  color: inherit;
+	transition: 1.2s ease; 
+ }
+.grid-boxes .project-headings {
+	text-align: center;
+	font-size: 1.3em; 
+  font-weight: bold;
 }

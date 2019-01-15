@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Code Projects</title>
+    <link href="https://fonts.googleapis.com/css?family=Courgette|Fira+Sans:700|Lora:400,700" rel="stylesheet"> 
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/JS30.css">
 
@@ -38,11 +39,9 @@
 
   <body>
     <div class="content-container">
-      <header style="background-image: url('/images/old-keyboard.png');"></header>
-<div class="page-background">
+      <div class="page-background">
   <div class="sub-heading intro-box">
       <h1>JavaScript30<br> <span>by Wes Bos</span> </h1>
-      <p>blurb</p>
   </div>
 
   <div class="JS30-wrapper">
@@ -50,8 +49,8 @@
     <div class="project-titles-side">
       <ul>
         <li><a href="#project_01">Drum Kit</a></li>
-        <li><a href="#project_02"></a>Clock</li>
-        <li><a href="#project_03"></a>CSS Variables</li>
+        <li><a href="#project_02">Clock</a></li>
+        <li><a href="#project_03">CSS Variables</a></li>
       </ul>
     </div>
 
@@ -67,7 +66,7 @@
       </div>
 
       <div class="project 02" onclick="window.open('./02Clock/index-START.html', '_blank')">
-        <h3>Live Clock Face</h3>
+        <a id="project_02"><h3>Live Clock Face</h3></a>
         <p><span style="font-weight: bold;">HTML/CSS</span><br>
           Transform-origin to change axis of transformation, transform: rotate(--deg).<br>
           Transition-timing-function, browser developer tools allow cool cubic-bezier functions.
@@ -78,7 +77,7 @@
       </div>
 
       <div class="project 03" onclick="window.open('./03CSSVarialbes/index-START.html', '_blank')">
-        <h3>CSS Variables</h3>
+        <a id="project_03"><h3>CSS Variables</h3></a>
         <p><span style="font-weight: bold;">HTML/CSS</span><br>
           Declaring and using CSS variables.
           <br><br><span style="font-weight: bold;">JavaScript</span><br>
@@ -92,6 +91,5 @@
 
     </div>
 
-    <script src="/assets/script.js></script>
   </body>
 </html>
