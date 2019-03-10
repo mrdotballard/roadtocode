@@ -136,6 +136,10 @@ body {
   margin: 0 60px;
 }
 
+.project-headings a {
+	color: inherit;
+	text-decoration: underline;
+}
 .content-container {
 	/* display: flex; */
 }
